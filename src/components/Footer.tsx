@@ -15,7 +15,7 @@ import Image from 'next/image'
 const Footer = () => {
 
     return (
-        <footer className="px-10 flex flex-col justify-center items-center w-full">
+        <footer className="px-10 flex flex-col justify-center items-center w-full mt-10">
             <div className='w-full flex justify-around items-start'>
                 <div className='flex flex-col items-center justify-center gap-10'>
                     <div className='flex flex-col items-center justify-center gap-5'>

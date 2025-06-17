@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Poppins, Satisfy } from "next/font/google";
 import "./globals.css";
 import Scroll from "@/components/Scroll";
 import Footer from "@/components/Footer";
@@ -8,6 +8,12 @@ const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
+const satisfy = Satisfy({
+  variable: "--font-satisfy",
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -26,7 +32,7 @@ export default function RootLayout({
         className={` ${poppins.variable} antialiased`}
       >
         <Scroll />
-        <main className="relative w-full flex flex-col items-center">
+        <main className="relative w-full flex flex-col items-center overflow-hidden">
           {children}
           <Footer />
         </main>
