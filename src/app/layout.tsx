@@ -26,7 +26,7 @@ export default function RootLayout({
         className={` ${poppins.variable} antialiased`}
       >
         <Scroll />
-        <main className="relative w-full">
+        <main className="relative w-full flex flex-col items-center">
           {children}
           <Footer />
         </main>
