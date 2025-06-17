@@ -15,8 +15,8 @@ import Image from 'next/image'
 const Footer = () => {
 
     return (
-        <footer className="px-10 py-10 flex flex-col justify-around items-start w-full gap-20 border">
-            <div>
+        <footer className="px-10 flex flex-col justify-center items-center w-full">
+            <div className='w-full flex justify-around items-start'>
                 <div className='flex flex-col items-center justify-center gap-10'>
                     <div className='flex flex-col items-center justify-center gap-5'>
                         <Image src={LogoLight} alt="Logo" className='w-30' />
@@ -28,7 +28,7 @@ const Footer = () => {
                             <input
                                 type="email"
                                 placeholder="Enter your email"
-                                className="outline-none bg-transparent text-primary px-2"
+                                className="outline-none bg-transparent text-primary px-6"
                             />
                             <button className="bg-blue-500 text-white rounded-full ml-2 p-2">
                                 <Image src={ArrowRight} alt="Arrow Right" className='size-5' />
@@ -42,12 +42,12 @@ const Footer = () => {
                         <Image src={Facebook} alt="Facebook" className='size-12 border border-secondary p-2 rounded-xl' />
                     </div>
                 </div>
-                <div className='flex justify-center items-start gap-20'>
+                <div className='flex justify-center items-start gap-30'>
                     <div className='flex flex-col justify-center items-start gap-2'>
                         <h1 className='text-xl text-secondary font-bold'>
                             OUR INITIATIVES
                         </h1>
-                        <ul className='text-sm flex flex-col gap-1 justify-center items-start'>
+                        <ul className='text-sm flex flex-col gap-1 justify-center items-start font-medium'>
                             <li>I-Camp</li>
                             <li>BuildSchool</li>
                             <li>Hult Prize</li>
@@ -66,23 +66,29 @@ const Footer = () => {
                             <li>Contact Us</li>
                         </ul>
                     </div>
-                    <div>
+                    <div className='flex flex-col justify-center items-start gap-2'>
                         <h1 className='text-xl text-secondary font-bold'>
                             CONTACT
                         </h1>
                         <ul className='text-sm flex flex-col gap-1 justify-center items-start'>
-                            <li>
-                                E-Cell KIIT, Bhubaneswar, Odisha
+                            <li className='flex items-center gap-2'>
+                                <Image src={Landmark} alt="Location" className='inline-block'/>
+                                <span>E-Cell KIIT, Bhubaneswar, Odisha</span>
                             </li>
-                            <li>
+                            <li className='flex items-center gap-2'>
+                                <Image src={Mail} alt="Email" className='inline-block' />
                                 <a href="mailto:support@ecell.in">support@ecell.in</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div></div>
-            <div></div>
+            <div className='w-full h-[0.01rem] bg-secondary mt-9'></div>
+            <div>
+                <p className='text-secondary p-4'>
+                    © 2025 KIIT E-CELL. All rights reserved.
+                </p>
+            </div>
         </footer >
     )
 }
