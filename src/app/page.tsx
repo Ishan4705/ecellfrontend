@@ -1,6 +1,7 @@
 import AboutSection from "@/components/AboutSection";
 import LaisonsSection from "@/components/LaisonsSection";
 import HeroSection from "@/components/HeroSection";
+import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <>
@@ -9,6 +10,7 @@ export default function Home() {
       {/* <div className="text-4xl font-bold h-dvh">HERO SECTION</div> */}
       <AboutSection />
       <LaisonsSection />
+      <Footer />
     </>
   );
 }
