@@ -38,7 +38,7 @@ export default function RootLayout({
         <Scroll />
         <main className="relative w-full flex flex-col items-center overflow-hidden">
           {children}
-          {!is404 && <Footer />}
+          {!is404}
         </main>
       </body>
     </html>

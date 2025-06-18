@@ -25,7 +25,7 @@ export default function Navbar() {
           <div className="flex gap-[80px] items-center justify-center h-full">
             <Link href="/blogs" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins']">Blogs</Link>
             <Link href="/events" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins']">Events</Link>
-            <Link href="/join" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins']">Join Us</Link>
+            <Link href="/contact" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins']">Join Us</Link>
           </div>
         </div>
       </div>
