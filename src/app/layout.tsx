@@ -36,7 +36,6 @@ export default function RootLayout({
         className={` ${poppins.variable} antialiased`}
       >
         <Scroll />
-        <Navbar />
         <main className="relative w-full flex flex-col items-center overflow-hidden">
           {children}
           {!is404 && <Footer />}

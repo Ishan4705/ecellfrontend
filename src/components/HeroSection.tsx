@@ -1,21 +1,26 @@
 "use client";
-
+import Navbar from "./Navbar";
 import Image from "next/image";
 import styles from "./HeroSection.module.css";
 
 export default function HeroSection() {
   return (
-    <section className="relative flex flex-col items-center justify-center min-h-screen w-full overflow-hidden bg-[#0a1836]">
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-tr from-[#0a1836] via-[#0a2a6c] to-[#1e5c8a]" />
-        <div
-          className={`absolute inset-0 w-full h-full ${styles.gridBackground}`}
+    <section className="relative flex flex-col items-center justify-center min-h-screen w-full overflow-hidden bg-gradient-1">
+      {/* Absolutely position the Navbar at the top */}
+      <div className="absolute top-0 left-0 w-full z-20">
+        <Navbar />
+      </div>
+      {/* Noise overlay */}
+      <div className="pointer-events-none absolute inset-0 z-0 opacity-30 mix-blend-overlay">
+        <Image
+          src="/grid.png"
+          alt="Noise"
+          fill
+          style={{ objectFit: "cover" }}
         />
-
-        <div className="absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 w-[380px] h-[380px] rounded-full bg-[#1e5c8a] blur-[100px] opacity-60" />
       </div>
 
-      <div className="relative flex items-center justify-center mb-6">
+      <div className="relative flex items-center justify-center mb-6 mt-32">
         <div className="absolute w-[260px] h-[260px] rounded-full bg-[#2563eb] blur-[60px] opacity-60 z-0" />
         <Image
           src="/logolight.png"
