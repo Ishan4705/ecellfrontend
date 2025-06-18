@@ -1,3 +1,4 @@
+"use client";
 import Contact from "../../components/ContactPage";
 
 export default function ContactPage() {
