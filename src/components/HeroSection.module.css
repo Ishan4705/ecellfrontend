@@ -1,0 +1,7 @@
+.gridBackground {
+  background-image: url('/grid.png');
+  background-repeat: repeat;
+  background-size: auto;
+  opacity: 0.4;
+  z-index: 0;
+}

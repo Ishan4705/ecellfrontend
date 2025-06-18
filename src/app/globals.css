@@ -18,6 +18,10 @@
   --font-mono: var(--font-geist-mono);
 }
 
+.navbar-gradient-bg {
+  background: linear-gradient(90deg, rgba(14,28,63,0.95) 0%, rgba(24,58,108,0.95) 100%);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -26,9 +30,16 @@
 }
 
 body {
-  background: var(--background);
+  background: #0a1836;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Optional: Remove default margin for full-bleed background */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
 }
 
 .bg-gradient-1 {

@@ -3,6 +3,8 @@ import { Poppins, Satisfy } from "next/font/google";
 import "./globals.css";
 import Scroll from "@/components/Scroll";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import { usePathname } from "next/navigation";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -26,15 +28,18 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const pathname = typeof window !== "undefined" ? window.location.pathname : "";
+  const is404 = pathname === "/not-found";
   return (
     <html lang="en">
       <body
         className={` ${poppins.variable} antialiased`}
       >
         <Scroll />
+        <Navbar />
         <main className="relative w-full flex flex-col items-center overflow-hidden">
           {children}
-          <Footer />
+          {!is404 && <Footer />}
         </main>
       </body>
     </html>

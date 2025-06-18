@@ -1,0 +1,85 @@
+.homepagenavbar {
+  top: 44px;
+  left: 115px;
+  width: 1050px;
+  height: 57px;
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+}
+.homepage-group7 {
+  width: 1050px;
+  height: 57px;
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+}
+.homepage-group6 {
+  width: 1050px;
+  height: 57px;
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+}
+.homepage-glassbox2 {
+  top: 4px;
+  left: 0px;
+  width: 1050px;
+  height: 50px;
+  position: absolute;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+  box-shadow: 0px 0px 5px 0.25px rgba(255, 255, 255, 0.5);
+  border-radius: 100px;
+  display: flex;
+  align-items: flex-start;
+}
+.homepage-frame60 {
+  top: 0px;
+  left: 54px;
+  width: 942px;
+  height: 57px;
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+}
+.homepage-frame4 {
+  gap: 70px;
+  top: 16px;
+  left: 638px;
+  width: 304px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+.homepage-frame2 {
+  gap: 54px;
+  top: 16px;
+  left: 0px;
+  width: 298px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+.homepageecelllogoredefinedwhite3x2 {
+  top: 3px;
+  left: 401.06px;
+  width: 139px;
+  height: 73px;
+  position: absolute;
+}
+.homepage-text17, .homepage-text18, .homepage-text19, .homepage-text20, .homepage-text21, .homepage-text22 {
+  color: #e2e2e2;
+  height: auto;
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  line-height: normal;
+  text-align: left;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.homepage-text17:hover, .homepage-text18:hover, .homepage-text19:hover, .homepage-text20:hover, .homepage-text21:hover, .homepage-text22:hover {
+  color: #fff;
+}
