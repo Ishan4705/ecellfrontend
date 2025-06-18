@@ -23,9 +23,12 @@ export default function ContactPage() {
               <button className="z-10 px-10 py-4 font-extrabold text-xl bg-gradient-to-r from-cyan-400 to-blue-500 text-black shadow-[6px_6px_24px_0px_rgba(0,0,0,0.25)] rounded-full border-none focus:outline-none transition-all">
                 Contact Us
               </button>
-              <button className="px-10 py-4 font-extrabold text-xl rounded-r-full bg-transparent text-black shadow-none border-none focus:outline-none transition-all -ml-6">
+                <button
+                className="px-10 py-4 font-extrabold text-xl rounded-r-full bg-transparent text-black shadow-none border-none focus:outline-none transition-all -ml-6"
+                onClick={() => window.location.href = '/signup'}
+                >
                 Join Us
-              </button>
+                </button>
             </div>
             <h1 className="text-white text-4xl md:text-5xl font-extrabold leading-tight mb-2 drop-shadow-[0_2px_12px_rgba(0,0,0,0.4)]">
               Want to Know More?<br /> Reach Out to us!
