@@ -64,7 +64,7 @@ export default function SignUpForm() {
             type="email"
             name="email"
             placeholder="Enter KIIT Email Id"
-            className="w-full rounded-xl bg-gray-200 px-6 py-4 text-lg outline-none pr-12"
+            className="w-full rounded-xl bg-gray-200 px-6 py-4 text-lg text-black outline-none pr-12"
             value={form.email}
             onChange={handleChange}
             required
@@ -91,7 +91,7 @@ export default function SignUpForm() {
             type={showPassword ? "text" : "password"}
             name="password"
             placeholder="Enter Password"
-            className="w-full rounded-xl bg-gray-200 px-6 py-4 text-lg outline-none pr-12"
+            className="w-full rounded-xl bg-gray-200 px-6 py-4 text-lg text-black outline-none pr-12"
             value={form.password}
             onChange={handleChange}
             required
@@ -108,7 +108,7 @@ export default function SignUpForm() {
             type={showConfirmPassword ? "text" : "password"}
             name="confirmPassword"
             placeholder="Confirm Password"
-            className="w-full rounded-xl bg-gray-200 px-6 py-4 text-lg outline-none pr-12"
+            className="w-full rounded-xl bg-gray-200 px-6 py-4 text-lg text-black outline-none pr-12"
             value={form.confirmPassword}
             onChange={handleChange}
             required
