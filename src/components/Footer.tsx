@@ -35,11 +35,22 @@ const Footer = () => {
                             </button>
                         </div>
                     </div>
-                    <div className='flex justify-start items-center w-full gap-5'>
-                        <Image src={LinkedIn} alt="LinkedIn" className='size-12 border border-secondary p-2 rounded-xl' />
-                        <Image src={Instagram} alt="Instagram" className='size-12 border border-secondary p-2 rounded-xl' />
-                        <Image src={Youtube} alt="Youtube" className='size-12 border border-secondary p-2 rounded-xl' />
-                        <Image src={Facebook} alt="Facebook" className='size-12 border border-secondary p-2 rounded-xl' />
+                    <div className='flex flex-col items-start justify-center gap-2'>
+                        <h2 className='font-bold'>Get connected with us on social networks:</h2>
+                        <div className='flex justify-start items-center w-full gap-3'>
+                            <a href="https://linkedin.com/company/kiit-e-cell" target="_blank" rel="noopener noreferrer" className="transform transition-transform duration-300 hover:scale-110">
+                                <Image src={LinkedIn} alt="LinkedIn" className='size-12 border border-secondary p-2 rounded-xl bg-blue-950' />
+                            </a>
+                            <a href="https://www.instagram.com/ecell_kiit/" target="_blank" rel="noopener noreferrer" className="transform transition-transform duration-300 hover:scale-110">
+                                <Image src={Instagram} alt="Instagram" className='size-12 border border-secondary p-2 rounded-xl bg-blue-950' />
+                            </a>
+                            <a href="https://youtube.com/@kiitecell" target="_blank" rel="noopener noreferrer" className="transform transition-transform duration-300 hover:scale-110">
+                                <Image src={Youtube} alt="Youtube" className='size-12 border border-secondary p-2 rounded-xl bg-blue-950' />
+                            </a>
+                            <a href="https://facebook.com/kiitecell" target="_blank" rel="noopener noreferrer" className="transform transition-transform duration-300 hover:scale-110">
+                                <Image src={Facebook} alt="Facebook" className='size-12 border border-secondary p-2 rounded-xl bg-blue-950' />
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div className='flex justify-center items-start gap-30'>
