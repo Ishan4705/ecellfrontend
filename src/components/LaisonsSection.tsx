@@ -4,7 +4,7 @@ import LaisonCard from "./LaisonCard"
 
 const LaisonsSection = () => {
     return (
-        <section className="bg-gradient-2 w-full flex flex-col items-center justify-center py-10 gap-14">
+        <section className="bg-slate-950 w-full flex flex-col items-center justify-center py-10 gap-14">
             <div className="flex flex-col items-center justify-center text-shadow-lg text-shadow-black">
                 <p className="text-5xl">
                     We've joined forces to turn

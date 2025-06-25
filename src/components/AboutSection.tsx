@@ -4,7 +4,7 @@ import LogoKiit from "@/assets/logokiit.svg"
 
 const AboutSection = () => {
     return (
-        <section className="flex flex-col justify-center items-center w-full bg-gradient-1 py-10 px-24 gap-10">
+        <section className="flex flex-col justify-center items-center w-full bg-slate-950 py-10 px-24 gap-10">
             <div className="flex justify-around items-center w-full">
                 <Image src={LogoLight} alt="Logo" />
                 <h1 className="text-8xl font-extrabold pl-20" style={{ 
