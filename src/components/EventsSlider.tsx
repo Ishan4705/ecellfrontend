@@ -15,7 +15,6 @@ const Slider = () => {
 	const [slides, setSlides] = useState<Slide[]>([]);
 	const [current, setCurrent] = useState(0);
 
-	// Fetch slides from API
 	useEffect(() => {
 		const fetchSlides = async () => {
 			try {
@@ -34,10 +33,8 @@ const Slider = () => {
 	const prevSlide = () => setCurrent((prev) => (prev - 1 + total) % total);
 	const nextSlide = () => setCurrent((prev) => (prev + 1) % total);
 
-	// Helper to get slide index with wrap-around
 	const getIndex = (idx: number) => (idx + total) % total;
 
-	// Helper to split title for blue/white effect
 	const getStyledTitle = (title = '') => {
 		const [first, ...rest] = title.split(' ');
 		return (
@@ -78,7 +75,6 @@ const Slider = () => {
 				})}
 			</div>
 
-			{/* Title, Arrows, and Register Button Row */}
 			<div className="flex items-center justify-center gap-4 mt-2 mb-4 w-full max-w-lg">
 				<button
 					onClick={prevSlide}

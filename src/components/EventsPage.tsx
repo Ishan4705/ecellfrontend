@@ -4,16 +4,15 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 const App: React.FC = () => {
   return (
-    // Main container for the entire events page, matching the background from style.css
+ 
     <div className="events-page bg-[#090314] text-white min-h-screen relative overflow-hidden flex flex-col w-full">
 
-      {/* Navbar Section - Replicating structure from EventsPage.html and styling from style.css */}
         <div className="absolute top-0 left-0 w-full z-20">
             <Navbar />
         </div>
       {/* Main Content Area */}
       <div className="flex flex-col items-center justify-center flex-1 pt-[120px] pb-16 px-2 sm:pt-[140px] md:pt-[150px] md:pb-20 grow w-full">
-        {/* "For those who seek more! Seek more!" text */}
+        
         <div
           className="for-those-who-seek-more font-bold text-[2.2rem] sm:text-[2.8rem] md:text-[3.5rem] lg:text-[68px] leading-[1.1] tracking-[-0.03em] text-center mb-10 sm:mb-14 md:mb-16 w-full"
           style={{
@@ -21,7 +20,7 @@ const App: React.FC = () => {
             WebkitBackgroundClip: 'text',
             backgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
-            color: 'transparent', // Fallback
+            color: 'transparent',
             opacity: 0.9,
           }}
         >
