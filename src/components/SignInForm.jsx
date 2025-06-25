@@ -23,7 +23,7 @@ const handleSignUpClick = () => {
 };
 
 return (
-    <div className="rounded-[2.5rem] bg-[#071a36]/90 p-10 w-full max-w-md mx-auto shadow-[0_8px_40px_0_rgba(0,0,0,0.45)] flex flex-col items-center">
+    <div className="rounded-[2.5rem] bg-slate-950/90 p-10 w-full max-w-md mx-auto shadow-[0_8px_40px_0_rgba(0,0,0,0.45)] flex flex-col items-center">
         <h2 className="text-white text-4xl font-extrabold mb-2 text-center">Sign in</h2>
         <p className="text-white/80 text-base mb-6 text-center">
             New to KIIT E-CELL?{" "}
@@ -41,7 +41,7 @@ return (
                     type="email"
                     name="email"
                     placeholder="Enter KIIT Email Id"
-                    className="w-full rounded-xl bg-gray-200 px-6 py-4 text-lg outline-none pr-12"
+                    className="w-full rounded-xl bg-gray-200 px-6 py-4 text-lg text-black outline-none pr-12"
                     value={form.email}
                     onChange={handleChange}
                     required
@@ -57,7 +57,7 @@ return (
                     type={showPassword ? "text" : "password"}
                     name="password"
                     placeholder="Enter Password"
-                    className="w-full rounded-xl bg-gray-200 px-6 py-4 text-lg outline-none pr-12"
+                    className="w-full rounded-xl bg-gray-200 px-6 py-4 text-lg text-black outline-none pr-12"
                     value={form.password}
                     onChange={handleChange}
                     required
