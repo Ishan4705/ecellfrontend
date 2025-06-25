@@ -39,9 +39,9 @@ export default function ContactPage() {
           </div>
           {/* Right Section (Form Card) */}
           <div className="flex-1 flex flex-col items-center justify-center py-12 px-6 md:px-10 relative">
-            <button className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-extrabold text-2xl px-10 py-3 rounded-2xl shadow-lg border-none focus:outline-none">
+            {/* <button className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-extrabold text-2xl px-10 py-3 rounded-2xl shadow-lg border-none focus:outline-none">
               Contact Us
-            </button>
+            </button> */}
             <div className="mt-10 w-full">
               <ContactForm />
             </div>
