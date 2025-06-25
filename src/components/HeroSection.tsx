@@ -11,7 +11,7 @@ export default function HeroSection() {
         <Navbar />
       </div>
 
-      <div className="relative flex items-center justify-center mb-6 mt-32">
+      <div className="relative flex flex-col items-center justify-center mb-6 mt-32">
         <div className="absolute w-[260px] h-[260px] rounded-full bg-[#2563eb] blur-[60px] opacity-60 z-0" />
         <Image
           src="/logolight.png"
@@ -19,6 +19,19 @@ export default function HeroSection() {
           width={708}
           height={650}
           className="relative z-10 w-[708px] h-[655px]"
+          style={{
+            imageRendering: 'crisp-edges',
+            filter: 'contrast(1.1) brightness(1.05)',
+          }}
+          priority
+          quality={100}
+        />
+        <Image
+          src="/E CELL LOGO REDEFINED_WHITE2@3x 2.png"
+          alt="E-Cell Logo Text"
+          width={150}
+          height={300}
+          className="absolute z-20 bottom-0 w-[150px] h-auto"
           style={{
             imageRendering: 'crisp-edges',
             filter: 'contrast(1.1) brightness(1.05)',
@@ -41,11 +54,11 @@ export default function HeroSection() {
         <span>By Entrepreneurs</span>
       </div> */}
 
-      <div className="flex flex-row gap-6">
-        <button className="bg-white text-[#0e1c3f] font-bold px-10 py-3 rounded-full shadow-lg border-2 border-white/80 transition hover:bg-gray-100 hover:border-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white">
+      <div className="flex flex-row gap-10 mt-12">
+        <button className="bg-gradient-to-b from-[#022684] to-[#00091E] text-white font-bold px-10 py-3 rounded-full shadow-lg border-2 border-slate-950 transition-all duration-300 ease-in-out hover:from-[#033aa3] hover:to-[#001230] hover:border-slate-800 hover:text-[#2E9AD2] cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white">
           SIGN IN
         </button>
-        <button className="bg-white text-[#0e1c3f] font-bold px-10 py-3 rounded-full shadow-lg border-2 border-white/80 transition hover:bg-gray-100 hover:border-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white">
+        <button className="bg-gradient-to-b from-[#022684] to-[#00091E] text-white font-bold px-10 py-3 rounded-full shadow-lg border-2 border-slate-950 transition-all duration-300 ease-in-out hover:from-[#033aa3] hover:to-[#001230] hover:border-slate-800 hover:text-[#2E9AD2] cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white">
           SIGN UP
         </button>
       </div>
