@@ -11,6 +11,27 @@ export interface Slide {
 
 const SLIDES_API_URL = 'http://127.0.0.1:5000/api/events';
 
+const LOCAL_SLIDES: Slide[] = [
+	{
+		image: '/events/e1.png',
+		title: 'Skill Sprint',
+		subtitle: 'Learn What Matters',
+		date: 'Starting 30 May',
+	},
+	{
+		image: '/events/e2.png',
+		title: 'Internship Camp',
+		subtitle: 'Resume Rescue',
+		date: '9th April, 2023 | 10 a.m.',
+	},
+	{
+		image: '/events/e3.png',
+		title: 'Build School 2025',
+		subtitle: 'KIIT E-CELL Welcomes',
+		date: '25th Jan, 2025 | 6:00 PM',
+	},
+];
+
 const Slider = () => {
 	const [slides, setSlides] = useState<Slide[]>([]);
 	const [current, setCurrent] = useState(0);
@@ -19,10 +40,11 @@ const Slider = () => {
 		const fetchSlides = async () => {
 			try {
 				const response = await fetch(SLIDES_API_URL);
+				if (!response.ok) throw new Error('API error');
 				const data = await response.json();
 				setSlides(data);
 			} catch (error) {
-				console.error('Failed to fetch slides:', error);
+				setSlides(LOCAL_SLIDES);
 			}
 		};
 		fetchSlides();
@@ -75,6 +97,7 @@ const Slider = () => {
 				})}
 			</div>
 
+			{/* Title, Arrows, and Register Button Row */}
 			<div className="flex items-center justify-center gap-4 mt-2 mb-4 w-full max-w-lg">
 				<button
 					onClick={prevSlide}
