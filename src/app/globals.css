@@ -2,9 +2,9 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1E1E1E;
   --primary: #ffffff;
-  --secondary: #7867D9;
+  --secondary: #5D8ACA;
   --cta: #171717;
 }
 
@@ -30,7 +30,7 @@
 }
 
 body {
-  background: #0a1836;
+  background: #0a0a0a;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -42,7 +42,7 @@ html, body {
   min-height: 100vh;
 }
 
-.bg-gradient-1 {
+/* .bg-gradient-1 {
   background-image: url("/gradient1.png");
   background-size: cover;
   background-position: center;
@@ -54,4 +54,4 @@ html, body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
