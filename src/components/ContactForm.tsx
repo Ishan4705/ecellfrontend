@@ -2,6 +2,8 @@
 import { useState } from "react";
 import styles from "./ContactForm.module.css";
 
+const CONTACT_API_URL = "http://127.0.0.1:5000/api/contact"; 
+
 export default function ContactForm() {
   const [form, setForm] = useState({
     firstName: "",
@@ -10,14 +12,30 @@ export default function ContactForm() {
     phone: "",
     message: "",
   });
+  const [status, setStatus] = useState<string | null>(null);
 
   const handleChange = (e: { target: { name: any; value: any; }; }) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: { preventDefault: () => void; }) => {
+  const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
-    alert("Message sent! We will get back to you soon.");
+    setStatus(null);
+    try {
+      const response = await fetch(CONTACT_API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (response.ok) {
+        setStatus("Message sent! We will get back to you soon.");
+        setForm({ firstName: "", lastName: "", email: "", phone: "", message: "" });
+      } else {
+        setStatus("Failed to send message. Please try again later.");
+      }
+    } catch (error) {
+      setStatus("Failed to send message. Please try again later.");
+    }
   };
 
   return (
@@ -74,6 +92,16 @@ export default function ContactForm() {
           Submit
         </button>
       </form>
+      {status && (
+        <div
+          className={
+            `${styles.statusMessage} ` +
+            (status.startsWith("Message sent") ? styles.statusSuccess : styles.statusError)
+          }
+        >
+          {status}
+        </div>
+      )}
     </div>
   );
 }
