@@ -10,7 +10,7 @@ import { FaLinkedin, FaInstagram, FaYoutube, FaFacebookF } from 'react-icons/fa'
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen w-full flex flex-col justify-between relative overflow-hidden bg-[#23223A]">
+    <div className="min-h-screen w-full flex flex-col justify-between relative overflow-hidden bg-slate-950">
       {/* Removed grid overlay */}
       <div className="absolute top-0 left-0 w-full z-20">
         <Navbar />
@@ -24,7 +24,7 @@ export default function ContactPage() {
       </div>
       {/* Card Section */}
       <div className="flex-1 flex flex-col items-center justify-center px-2 md:px-8 z-10 relative">
-        <div className="w-full max-w-5xl rounded-[2rem] border border-[#4DE1FF] bg-[#23223A] flex flex-col md:flex-row shadow-2xl overflow-hidden contact-card-outline">
+        <div className="w-full max-w-5xl rounded-[2rem] border border-[#4DE1FF] bg-slate-950 flex flex-col md:flex-row shadow-2xl overflow-hidden contact-card-outline">
           {/* Left Section */}
           <div className="flex-1 flex flex-col items-center justify-center py-12 px-6 md:px-10">
             <Image src={LogoLight} alt="KIIT E-Cell Logo" width={140} height={140} className="mb-4" />
