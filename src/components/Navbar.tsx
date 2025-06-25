@@ -36,19 +36,19 @@ export default function Navbar() {
             <div className="flex gap-12 items-center h-full ml-auto">
               <Link href="/blogs" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins'] hover:text-[#2E9AD2] transition">Blogs</Link>
               <Link href="/events" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins'] hover:text-[#2E9AD2] transition">Events</Link>
-              <Link href="/contact" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins'] hover:text-[#2E9AD2] transition">Join Us</Link>
+              <Link href="/contact" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins'] hover:text-[#2E9AD2] transition">Contact Us</Link>
             </div>
           </div>
         </div>
 
         {/* Right Icon */}
-        <button
-          type="button"
-          className="w-12 h-12 rounded-full flex items-center justify-center ml-2 shadow focus:outline-none focus:ring-2 focus:ring-[#2E9AD2] transition"
-          aria-label="User"
+        <Link
+          href="/signin"
+          className="w-12 h-12 rounded-full flex items-center justify-center ml-2 shadow focus:outline-none focus:ring-2 focus:ring-[#2E9AD2] transition hover:bg-white/10"
+          aria-label="Sign In"
         >
           <Image src="/user.png" alt="User" width={48} height={48} />
-        </button>
+        </Link>
       </div>
     </nav>
   );
