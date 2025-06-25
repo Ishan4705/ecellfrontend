@@ -12,14 +12,33 @@ export default function SignUpForm() {
   });
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
 
   const handleChange = (e: { target: { name: any; value: any } }) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: { preventDefault: () => void }) => {
+  const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    alert("Sign up successful!");
+    setError("");
+    setSuccess("");
+    if (form.password !== form.confirmPassword) {
+      setError("Passwords do not match");
+      return;
+    }
+    try {
+      const res = await fetch("http://127.0.0.1:5000/api/signup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: form.email, password: form.password }),
+      });
+      if (!res.ok) throw new Error("Sign up failed");
+      setSuccess("Sign up successful!");
+      setForm({ email: "", password: "", confirmPassword: "" });
+    } catch (err) {
+      setError("Sign up failed. Please try again.");
+    }
   };
 
   return (
@@ -38,6 +57,8 @@ export default function SignUpForm() {
         Here
       </p>
       <form className="w-full flex flex-col gap-5" onSubmit={handleSubmit}>
+        {error && <div className="text-red-500 text-center font-semibold">{error}</div>}
+        {success && <div className="text-green-500 text-center font-semibold">{success}</div>}
         <div className="relative">
           <input
             type="email"
