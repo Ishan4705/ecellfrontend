@@ -5,29 +5,50 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <nav className="relative w-full flex justify-center pt-8 overflow-visible">
-      <div className="w-[1200px] h-[73px] relative overflow-visible flex items-start">
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[1200px] h-[50px] rounded-[100px] bg-black shadow-[0px_0px_5px_0.25px_rgba(255,255,255,0.5)] backdrop-blur-[15px] overflow-visible" />
-        <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[1080px] h-[73px] flex items-center overflow-visible">
- 
-          <div className="flex gap-[64px] items-center justify-center h-full">
-            <Link href="/" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins'] hover:text-[#2E9AD2] transition-colors duration-300">Home</Link>
-            <Link href="/about" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins'] hover:text-[#2E9AD2] transition-colors duration-300">About Us</Link>
-            <Link href="/gallery" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins'] hover:text-[#2E9AD2] transition-colors duration-300">Gallery</Link>
-          </div>
-
-          <div className="flex-1 flex justify-center items-start relative h-full">
-            <div className="absolute left-1/2 -translate-x-1/2 top-[12px] z-10 pointer-events-none overflow-visible">
-              <Image src="/logolight.svg" alt="Logo" width={139} height={73} className="w-[90px] h-[47px]" style={{ aspectRatio: '138.88/73', objectFit: 'contain', display: 'block' }} priority />
+    <nav className="relative w-full flex justify-center pt-6 pb-2 bg-[#0a0718]">
+      <div className="w-full max-w-[1500px] flex items-center justify-between px-4">
+        {/* Left Icon */}
+        <button
+          type="button"
+          className="w-12 h-12 rounded-full flex items-center justify-center mr-2 shadow focus:outline-none focus:ring-2 focus:ring-[#2E9AD2] transition"
+          aria-label="Language"
+        >
+          <Image src="/globe.png" alt="Globe" width={48} height={48} />
+        </button>
+        {/* Center Navbar */}
+        <div className="flex-1 flex justify-center">
+          <div className="w-full max-w-[1350px] h-[56px] flex items-center px-6 rounded-full bg-[#0d0a1a] border border-[#28243a] shadow-[0_0_8px_0_rgba(255,255,255,0.08)] relative">
+            {/* Left Links */}
+            <div className="flex gap-12 items-center h-full">
+              <Link href="/" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins'] hover:text-[#2E9AD2] transition">Home</Link>
+              <Link href="/about" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins'] hover:text-[#2E9AD2] transition">About Us</Link>
+              <Link href="/gallery" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins'] hover:text-[#2E9AD2] transition">Gallery</Link>
+            </div>
+            {/* Center Logo */}
+            <Link
+              href="/"
+              className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-10"
+              aria-label="Home"
+            >
+              <Image src="/logolight.svg" alt="Logo" width={90} height={47} className="object-contain" priority />
+            </Link>
+            {/* Right Links */}
+            <div className="flex gap-12 items-center h-full ml-auto">
+              <Link href="/blogs" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins'] hover:text-[#2E9AD2] transition">Blogs</Link>
+              <Link href="/events" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins'] hover:text-[#2E9AD2] transition">Events</Link>
+              <Link href="/contact" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins'] hover:text-[#2E9AD2] transition">Join Us</Link>
             </div>
           </div>
-
-          <div className="flex gap-[80px] items-center justify-center h-full">
-            <Link href="/blogs" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins'] hover:text-[#2E9AD2] transition-colors duration-300">Blogs</Link>
-            <Link href="/events" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins'] hover:text-[#2E9AD2] transition-colors duration-300">Events</Link>
-            <Link href="/contact" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins'] hover:text-[#2E9AD2] transition-colors duration-300">Join Us</Link>
-          </div>
         </div>
+
+        {/* Right Icon */}
+        <button
+          type="button"
+          className="w-12 h-12 rounded-full flex items-center justify-center ml-2 shadow focus:outline-none focus:ring-2 focus:ring-[#2E9AD2] transition"
+          aria-label="User"
+        >
+          <Image src="/user.png" alt="User" width={48} height={48} />
+        </button>
       </div>
     </nav>
   );
