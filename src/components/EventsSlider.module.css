@@ -1,0 +1,34 @@
+.slider-viewport {
+  width: 18rem;
+  max-width: 100vw;
+  overflow: hidden;
+  position: relative;
+  height: 14rem;
+}
+.slider-track {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.4,0,0.2,1);
+  will-change: transform;
+  height: 100%;
+}
+.slider-slide {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0 0.5rem;
+}
+
+.slider-track-0 { transform: translateX(0%); }
+.slider-track-1 { transform: translateX(-100%); }
+.slider-track-2 { transform: translateX(-200%); }
+
+.slide-box {
+  box-sizing: border-box;
+}
+
+.register-btn {
+  background: linear-gradient(90deg, rgba(0,185,255,1) 0%, rgba(0,111,153,1) 100%);
+}

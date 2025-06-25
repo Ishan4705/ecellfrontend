@@ -150,3 +150,13 @@
   color: #888;
   opacity: 1;
 }
+.statusMessage {
+  margin-top: 16px;
+  font-weight: 500;
+}
+.statusSuccess {
+  color: green;
+}
+.statusError {
+  color: red;
+}
