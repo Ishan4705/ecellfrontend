@@ -8,7 +8,7 @@
   --cta: #171717;
 }
 
-@theme inline {
+/* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
@@ -16,7 +16,7 @@
   --color-cta: var(--cta);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
+} */
 
 .navbar-gradient-bg {
   background: linear-gradient(90deg, rgba(14,28,63,0.95) 0%, rgba(24,58,108,0.95) 100%);
