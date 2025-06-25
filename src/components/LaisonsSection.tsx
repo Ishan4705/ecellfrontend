@@ -7,7 +7,7 @@ const LaisonsSection = () => {
         <section className="bg-slate-950 w-full flex flex-col items-center justify-center py-10 gap-14">
             <div className="flex flex-col items-center justify-center text-shadow-lg text-shadow-black">
                 <p className="text-5xl">
-                    We've joined forces to turn
+                    We've joined <span style={{ color: '#2E9AD2' }}>forces</span> to turn
                 </p>
                 <p className="text-5xl">
                     bold ideas into reality
