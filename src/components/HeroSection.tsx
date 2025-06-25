@@ -1,6 +1,7 @@
 "use client";
 import Navbar from "./Navbar";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./HeroSection.module.css";
 
 export default function HeroSection() {
@@ -55,12 +56,12 @@ export default function HeroSection() {
       </div> */}
 
       <div className="flex flex-row gap-10 mt-12">
-        <button className="bg-gradient-to-b from-[#022684] to-[#00091E] text-white font-bold px-10 py-3 rounded-full shadow-lg border-2 border-slate-950 transition-all duration-300 ease-in-out hover:from-[#033aa3] hover:to-[#001230] hover:border-slate-800 hover:text-[#2E9AD2] cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white">
+        <Link href="/signin" className="bg-gradient-to-b from-[#022684] to-[#00091E] text-white font-bold px-10 py-3 rounded-full shadow-lg border-2 border-slate-950 transition-all duration-300 ease-in-out hover:from-[#033aa3] hover:to-[#001230] hover:border-slate-800 hover:text-[#2E9AD2] cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white inline-block text-center">
           SIGN IN
-        </button>
-        <button className="bg-gradient-to-b from-[#022684] to-[#00091E] text-white font-bold px-10 py-3 rounded-full shadow-lg border-2 border-slate-950 transition-all duration-300 ease-in-out hover:from-[#033aa3] hover:to-[#001230] hover:border-slate-800 hover:text-[#2E9AD2] cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white">
+        </Link>
+        <Link href="/signup" className="bg-gradient-to-b from-[#022684] to-[#00091E] text-white font-bold px-10 py-3 rounded-full shadow-lg border-2 border-slate-950 transition-all duration-300 ease-in-out hover:from-[#033aa3] hover:to-[#001230] hover:border-slate-800 hover:text-[#2E9AD2] cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white inline-block text-center">
           SIGN UP
-        </button>
+        </Link>
       </div>
     </section>
   );
