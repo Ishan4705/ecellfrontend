@@ -11,9 +11,9 @@ export default function Navbar() {
         <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[1080px] h-[73px] flex items-center overflow-visible">
  
           <div className="flex gap-[64px] items-center justify-center h-full">
-            <Link href="/" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins']">Home</Link>
-            <Link href="/about" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins']">About Us</Link>
-            <Link href="/gallery" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins']">Gallery</Link>
+            <Link href="/" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins'] hover:text-[#2E9AD2] transition-colors duration-300">Home</Link>
+            <Link href="/about" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins'] hover:text-[#2E9AD2] transition-colors duration-300">About Us</Link>
+            <Link href="/gallery" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins'] hover:text-[#2E9AD2] transition-colors duration-300">Gallery</Link>
           </div>
 
           <div className="flex-1 flex justify-center items-start relative h-full">
@@ -23,9 +23,9 @@ export default function Navbar() {
           </div>
 
           <div className="flex gap-[80px] items-center justify-center h-full">
-            <Link href="/blogs" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins']">Blogs</Link>
-            <Link href="/events" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins']">Events</Link>
-            <Link href="/contact" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins']">Join Us</Link>
+            <Link href="/blogs" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins'] hover:text-[#2E9AD2] transition-colors duration-300">Blogs</Link>
+            <Link href="/events" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins'] hover:text-[#2E9AD2] transition-colors duration-300">Events</Link>
+            <Link href="/contact" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins'] hover:text-[#2E9AD2] transition-colors duration-300">Join Us</Link>
           </div>
         </div>
       </div>
