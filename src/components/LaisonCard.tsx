@@ -64,7 +64,7 @@ const LiasonCardComponent: React.FC<LiasonCardProps> = ({
   name = "Javi A. Torres",
   title = "Software Engineer",
   handle = "javicodes",
-  status = "Online",
+  status = "LinkedIn",
   contactText = "Contact",
   showUserInfo = true,
   onContactClick,

@@ -21,7 +21,7 @@ export default function Navbar() {
             {/* Left Links */}
             <div className="flex gap-12 items-center h-full">
               <Link href="/" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins'] hover:text-[#2E9AD2] transition">Home</Link>
-              <Link href="/about" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins'] hover:text-[#2E9AD2] transition">About Us</Link>
+              <Link href="/#about" scroll={true} className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins'] hover:text-[#2E9AD2] transition">About Us</Link>
               <Link href="/gallery" className="text-[#E2E2E2] text-base tracking-[0.06em] font-light font-['Poppins'] hover:text-[#2E9AD2] transition">Gallery</Link>
             </div>
             {/* Center Logo */}
